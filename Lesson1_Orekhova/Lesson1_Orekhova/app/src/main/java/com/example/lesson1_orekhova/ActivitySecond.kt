@@ -12,7 +12,7 @@ open class Student(
     var n : String, var sr : String, var g : String, var by : String
 ) {
 
-    var name: String = n
+    var name: String = n  // имя
         get() = field
         set(value) {
             if (value != "")
@@ -20,7 +20,7 @@ open class Student(
             else
                 throw Exception("Empty name!")
         }
-    var surname: String = sr
+    var surname: String = sr  // фамилия
         get() = field
         set(value) {
             if (value != "")
@@ -29,7 +29,7 @@ open class Student(
                 throw Exception("Empty surname!")
         }
 
-    var grade: String = g
+    var grade: String = g   // класс
         get() = field
         set(value) {
             if (value != "")
@@ -38,7 +38,7 @@ open class Student(
                 throw Exception("Empty grade!")
         }
 
-    var birthdayYear: String = by
+    var birthdayYear: String = by  // год рождения
         get() = field
         set(value) {
             if (value.toInt() > 1900 && value.toInt() < 2019 )
@@ -57,26 +57,26 @@ class ActivitySecond : AppCompatActivity() {
         val editTextNameObj = findViewById<EditText>(R.id.editTextNameObj)
         val buttonNameObj = findViewById<Button>(R.id.buttonNameObj)
         val textViewNamesObj = findViewById<TextView>(R.id.textViewNamesObj)
-        var students = HashMap<Long, Student>()
+        var students = HashMap<Long, Student>() 	// карта студентов
         editTextNameObj.setOnKeyListener{_, keyCode, keyEvent ->
-            if (keyEvent.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
-                var student = editTextNameObj.text.toString().trim()
-                editTextNameObj.setText("")
+            if (keyEvent.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {  // обработка нажатия на Enter
+                var student = editTextNameObj.text.toString().trim()  // считывание данных
+                editTextNameObj.setText("")  	 // очищение поля ввода
                 var a: List<String> = student.split(" ")
-                var person = Student(a[0], a[1], a[2], a[3])
-                val id : Long = System.currentTimeMillis()
-                students[id] = person
+                var person = Student(a[0], a[1], a[2], a[3])  // создание объекта
+                val id : Long = System.currentTimeMillis()    // генерация ID
+                students[id] = person	// добавление в карту
                 return@setOnKeyListener true
             }
             false
         }
 
         buttonNameObj.setOnClickListener {
-            if (!(textViewNamesObj.text.toString().equals(""))) {
+            if (!(textViewNamesObj.text.toString().equals(""))) { 	// очищение поля вывода
                 textViewNamesObj.text = ""
             }
 
-            for ((id, student) in students) {
+            for ((id, student) in students) {  	// вывод студентов
                 var temp : String = "$id ${student.name} ${student.surname} ${student.grade} ${student.birthdayYear}"
                 textViewNamesObj.append(temp+"\n");
             }

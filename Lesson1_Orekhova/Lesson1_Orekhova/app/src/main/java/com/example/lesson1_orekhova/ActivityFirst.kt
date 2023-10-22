@@ -18,19 +18,19 @@ class ActivityFirst : AppCompatActivity() {
         val buttonSaveName = findViewById<Button>(R.id.buttonSaveName)
         val buttonListNames = findViewById<Button>(R.id.buttonListNames)
         val textViewNames = findViewById<TextView>(R.id.textViewNamesObj)
-        var studentList = TreeSet<String>();
+        var studentList = TreeSet<String>(); // инициализация списка студентов
 
-        buttonSaveName.setOnClickListener {
+        buttonSaveName.setOnClickListener {  // обработка введенного имени
             var studentName = editTextNames.text.toString().trim()
             editTextNames.setText("")
             studentList.add(studentName)
         }
 
-        buttonListNames.setOnClickListener {
-            if (!(textViewNames.text.toString().equals(""))) {
+        buttonListNames.setOnClickListener {  // обработка кнопки вывода
+            if (!(textViewNames.text.toString().equals(""))) { // очищение поля вывода
                 textViewNames.text = ""
             }
-            for (student in studentList) {
+            for (student in studentList) {  // вывод студентов
                 textViewNames.append(student+"\n");
             }
         }
