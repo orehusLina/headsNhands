@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lesson2_Orekhova</string>
+    <string name="firstButton">Первая кнопка</string>
+    <string name="secondButton">Вторая кнопка</string>
+    <string name="pushkin">
+        Хоть тяжело подчас в ней бремя,\n
+        Телега на ходу легка;\n
+        Ямщик лихой, седое время,\n
+        Везет, не слезет с облучка.
+    </string>
+</resources>

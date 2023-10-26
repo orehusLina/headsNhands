@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lesson2_Orekhova</string>
+    <string name="firstButton">First Button</string>
+    <string name="secondButton">Second Button</string>
+    <string name="pushkin">Sorry, there is nothing</string>
+    <string name="buttonAndroidVersion" translatable="false">Боль и страдание</string>
+    <string name="buttonStrangeCorners" translatable="false">Кнопка 1</string>
+</resources>
