@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">Lesson2_Orekhova</string>
-    <string name="buttonAndroidVersion">Радость и счастье</string>
+    <string name="button_android_version">Радость и счастье</string>
 </resources>

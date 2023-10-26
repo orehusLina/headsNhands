@@ -28,7 +28,8 @@
         android:text="Кнопка 1"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint = "@color/button_strange_corners"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
