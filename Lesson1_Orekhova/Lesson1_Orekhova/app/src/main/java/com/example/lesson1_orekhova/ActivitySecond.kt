@@ -25,7 +25,13 @@ class ActivitySecond : AppCompatActivity() {
                 var studentText = editTextNameObj.text.toString().trim()
                 editTextNameObj.setText("")
                 val studentTemp: List<String> = studentText.split(" ")
-                if (studentTemp.size != 4) {
+				var flag = false
+				studentTemp.forEach {
+					if (it.isEmpty()) {
+						flag = true
+					}
+				}
+                if (studentTemp.size != 4 || flag) {
                     val text = "Неправильный ввод"
                     val duration = Toast.LENGTH_SHORT
                     val toast = Toast.makeText(applicationContext, text, duration)
