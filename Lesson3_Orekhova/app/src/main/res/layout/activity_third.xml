@@ -2,8 +2,111 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ThirdActivity">
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:liftOnScroll="false">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:menu="@menu/menu_settings"
+            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:title="@string/profile"
+            app:titleMarginStart="8dp"
+            app:titleTextAppearance="@style/BigTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/textViewCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+
+                app:drawableStartCompat="@mipmap/avatar" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/personal_data"
+                android:textColor="@color/light_yellow" />
+
+            <include
+                android:id="@+id/fieldUsername"
+                layout="@layout/user_field_constraint" />
+
+            <include
+                android:id="@+id/fieldSurename"
+                layout="@layout/user_field_constraint" />
+
+            <include
+                android:id="@+id/fieldEmail"
+                layout="@layout/user_field_constraint" />
+
+            <include
+                android:id="@+id/fieldLogin"
+                layout="@layout/user_field_constraint" />
+
+            <include
+                android:id="@+id/fieldCity"
+                layout="@layout/user_field_constraint" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        style="@style/FieldContent"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="?selectableItemBackground"
+        android:drawableLeft="@drawable/exit"
+        android:drawablePadding="72dp"
+        android:text="@string/log_out"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
