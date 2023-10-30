@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lesson3_Orekhova</string>
+    <string name="button_show_profile_linear">Посмотреть профиль (Linear Layout)</string>
+    <string name="button_show_profile_constraint">Посмотреть профиль (Constraint Layout)</string>
+    <string name="petrovich_club">Клуб Петровичей</string>
+    <string name="profile">Личный профиль</string>
+    <string name="personal_data">Личные данные</string>
+    <string name="name_title">Имя</string>
+    <string name="surname_title">Фамилия</string>
+    <string name="email_title">E-mail</string>
+    <string name="login_title">Логин</string>
+    <string name="city_title">Ваш регион</string>
+    <string name="log_out">Выйти из аккаунта</string>
+</resources>
