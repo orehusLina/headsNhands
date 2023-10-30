@@ -1,0 +1,10 @@
+<resources>
+    <string name="first_button">Первая кнопка</string>
+    <string name="second_button">Вторая кнопка</string>
+    <string name="pushkin">
+        Хоть тяжело подчас в ней бремя,\n
+        Телега на ходу легка;\n
+        Ямщик лихой, седое время,\n
+        Везет, не слезет с облучка.
+    </string>
+</resources>
