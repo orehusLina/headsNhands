@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Lesson4</string>
+    <string name="my_flat">Моя квартира</string>
+
+    <string name="item1_name">Квитанции</string>
+    <string name="item1_description">- 40 080,55 ₽</string>
+
+    <string name="item2_name">Счетчики</string>
+    <string name="item2_description">Подайте показания</string>
+
+    <string name="item3_name">Рассрочка</string>
+    <string name="item3_description">Сл. платеж 25.02.2018</string>
+
+    <string name="item4_name">Страхование</string>
+    <string name="item4_description">Полис до 12.01.2019</string>
+
+    <string name="item5_name">Интернет и ТВ</string>
+    <string name="item5_description">Баланс 350 ₽</string>
+
+    <string name="item6_name">Домофон</string>
+    <string name="item6_description">Подключен</string>
+
+    <string name="item7_name">Охрана</string>
+    <string name="item7_description">Нет</string>
+
+    <string name="item1_base_info">Контакты УК и служб</string>
+    <string name="item2_base_info">Мои заявки</string>
+    <string name="item3_base_info">Памятка жителя А101</string>
+</resources>
