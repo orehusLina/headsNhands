@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.lesson6_orekhova.ui.home.HomeFragment"
+        android:label="@string/item_one"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_counters"
+        android:name="com.example.lesson6_orekhova.ui.counters.CountersFragment"
+        android:label="@string/item_two"
+        tools:layout="@layout/fragment_counters" />
+
+    <fragment
+        android:id="@+id/navigation_cats"
+        android:name="com.example.lesson6_orekhova.ui.cats.CatsFragment"
+        android:label="@string/item_three"
+        tools:layout="@layout/fragment_cats" />
+</navigation>

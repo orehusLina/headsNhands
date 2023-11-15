@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Lesson6_orekhova" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/cool_blue</item>
+        <item name="background">@color/blue_shadow</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/gray</item>
+        <!-- Action bar theme. -->
+        <item name="actionBarTheme">@style/Custom.ActionBar</item>
+        <item name="colorOnSurface">@color/light_gray</item>
+    </style>
+
+   <style name="Custom.ActionBar" parent="">
+       <item name="colorPrimary">@color/white</item>
+   </style>
+
+</resources>
