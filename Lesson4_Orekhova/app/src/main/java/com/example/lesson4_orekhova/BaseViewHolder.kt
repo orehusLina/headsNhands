@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.lesson4_orekhova.data.detailList
 import com.example.lesson4_orekhova.databinding.ItemBaseBinding
 
 class BaseViewHolder(
@@ -21,5 +20,8 @@ class BaseViewHolder(
         }
         binding.imageViewIcon.setImageResource(base.image)
         binding.textViewId.text = base.name
+        if (base.description != null) {
+            binding.textDescriptionViewId.text = base.description
+        }
     }
 }

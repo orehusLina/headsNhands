@@ -26,4 +26,6 @@
     <string name="item1_base_info">Контакты УК и служб</string>
     <string name="item2_base_info">Мои заявки</string>
     <string name="item3_base_info">Памятка жителя А101</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

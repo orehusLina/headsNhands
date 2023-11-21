@@ -32,7 +32,6 @@ class DetailViewHolder(
         if (detail.urgent) {
             val red = binding.root.resources.getColor(R.color.red)
             textViewFullName.setTextColor(red)
-
         }
     }
 }

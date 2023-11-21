@@ -2,9 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="Инфа"
+        android:id="@+id/idIconAbout"
         android:icon="@drawable/ic_info_white"
-        app:showAsAction="ifRoom"/>
+        android:title="Инфа"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/settings"
         android:icon="@drawable/home_arrows"

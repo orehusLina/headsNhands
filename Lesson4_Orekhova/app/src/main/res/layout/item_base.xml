@@ -26,20 +26,23 @@
             android:id="@+id/textViewId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="28dp"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="8dp"
-            android:padding="8dp"
             app:layout_constraintStart_toStartOf="@id/imageViewIcon"
             app:layout_constraintTop_toTopOf="parent"
             style="@style/BaseTextViewStyle"
             tools:text="Название карточки" />
 
         <TextView
+            android:id="@+id/textDescriptionViewId"
+            style="@style/DescriptionTextViewStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="16dp"
             app:layout_constraintStart_toStartOf="@+id/textViewId"
             app:layout_constraintTop_toBottomOf="@+id/textViewId"
-            style="@style/DescriptionTextViewStyle"
             tools:text="Описание" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
