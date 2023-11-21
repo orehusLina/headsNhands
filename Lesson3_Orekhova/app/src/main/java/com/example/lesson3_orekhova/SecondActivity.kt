@@ -39,14 +39,13 @@ class SecondActivity : AppCompatActivity() {
 
         binding.buttonLogOut.setOnClickListener{
             Toast.makeText(this, "Вышли из аккаунта", Toast.LENGTH_SHORT).show()
-
         }
 
         val worker = Worker(
             "7898769", "Специалист", "Анастасия", "Антонина", "any.box@gmail.com",
             "HIE023UOI88", "Санкт-Петербург"
         )
-        val cardText: String = "\nКарта №${worker.card}\n${worker.job}"
+        val cardText: String = "\n${getString(R.string.card_number)}${worker.card}\n${worker.job}"
 
         with(binding) {
             textViewCard.text = cardText

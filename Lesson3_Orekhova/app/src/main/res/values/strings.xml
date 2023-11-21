@@ -11,4 +11,6 @@
     <string name="login_title">Логин</string>
     <string name="city_title">Ваш регион</string>
     <string name="log_out">Выйти из аккаунта</string>
+    <string name="card_number">Карта №</string>
+    <string name="settings">Настройки</string>
 </resources>
