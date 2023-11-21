@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Lesson4" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorOnBackground">@color/white_gray</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="background">@color/white_gray</item>
         <item name="android:textColor">@color/dark_gray</item>
         <item name="statusBarBackground">@color/white</item>
     </style>
