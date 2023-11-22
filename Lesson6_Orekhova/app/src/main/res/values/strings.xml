@@ -6,4 +6,15 @@
     <string name="item_one">Item one</string>
     <string name="item_two">Item two</string>
     <string name="item_three">Item three</string>
+    <string name="cold_water">Холодная вода</string>
+    <string name="hot_water">Горячая вода</string>
+    <string name="electricity">Электроэнергия</string>
+    <string name="water_date">25.03.18</string>
+    <string name="electricity_last_date">16.02.18</string>
+    <string name="electricity_next_date">25.02.18</string>
+    <string name="urgent_submission_date">Необходимо подать показания до </string>
+    <string name="last_submitted_date">Показания сданы </string>
+    <string name="next_submission_date"> и будут учтены при следующем расчете </string>
+    <string name="new_numbers">Новые показания</string>
+    <string name="basic_input">35</string>
 </resources>

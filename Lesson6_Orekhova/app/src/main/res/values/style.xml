@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FieldName">
+        <item name="android:textSize"></item>
+    </style>
+</resources>
