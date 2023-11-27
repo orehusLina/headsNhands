@@ -3,6 +3,7 @@ package com.example.lesson4_orekhova
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.GridLayoutManager
@@ -46,10 +47,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.toolbar.menu.findItem(R.id.idIconAbout).setOnMenuItemClickListener {
-            val myDialogFragment = MyDialogFragment()
-            val manager = supportFragmentManager
-            val transaction: FragmentTransaction = manager.beginTransaction()
-            myDialogFragment.show(transaction, "dialog")
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Важное сообщение")
+                .setMessage("Покормите кота!")
+                .setIcon(R.drawable.info)
+                .setPositiveButton("ОК",null)
+            builder.create()
+            builder.show()
             true
         }
 

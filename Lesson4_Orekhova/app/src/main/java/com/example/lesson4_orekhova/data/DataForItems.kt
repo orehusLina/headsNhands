@@ -10,74 +10,74 @@ fun listAll(resources: Resources): List<ListItem> {
     return listOf(
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item1_name),
-                description = resources.getString(R.string.item1_description),
+                name = "Квитанции",
+                description = "- 40 080,55 ₽",
                 image = R.drawable.kvitochki,
                 urgent = true,
             )
         ),
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item2_name),
-                description = resources.getString(R.string.item2_description),
+                name = "Счетчики",
+                description = "Подайте показания",
                 image = R.drawable.schetchik,
                 urgent = true,
             )
         ),
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item3_name),
-                description = resources.getString(R.string.item3_description),
+                name = "Рассрочка",
+                description = "Сл. платеж 25.02.2018",
                 image = R.drawable.rassrochka,
                 urgent = false,
             )
         ),
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item4_name),
-                description = resources.getString(R.string.item4_description),
+                name = "Страхование",
+                description = "Полис до 12.01.2019",
                 image = R.drawable.strakhovanie,
                 urgent = false,
             )
         ),
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item5_name),
-                description = resources.getString(R.string.item5_description),
+                name = "Интернет и ТВ",
+                description = "Баланс 350 ₽",
                 image = R.drawable.internet,
                 urgent = false,
             )
         ),
         ListItem.DetailItem(
             DetailInfoItem(
-                name = resources.getString(R.string.item6_name),
-                description = resources.getString(R.string.item6_description),
+                name = "Домофон",
+                description = "Подключен",
                 image = R.drawable.domophone,
                 urgent = false,
             )
         ),
         ListItem.BaseItem(
             BaseInfoItem(
-                name = resources.getString(R.string.item7_name),
-                description = resources.getString(R.string.item7_description),
+                name = "Охрана",
+                description = "Нет",
                 image = R.drawable.ohrana,
             )
         ),
         ListItem.BaseItem(
             BaseInfoItem(
-                name = resources.getString(R.string.item1_base_info),
+                name = "Контакты УК и служб",
                 image = R.drawable.contacts
             )
         ),
         ListItem.BaseItem(
             BaseInfoItem(
-                name = resources.getString(R.string.item2_base_info),
+                name = "Мои заявки",
                 image = R.drawable.zayavki
             )
         ),
         ListItem.BaseItem(
             BaseInfoItem(
-                name = resources.getString(R.string.item3_base_info),
+                name = "Памятка жителя A101",
                 image = R.drawable.about
             )
         ),
